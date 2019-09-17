@@ -1,0 +1,97 @@
+* {
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web",sans-serif !important
+}
+
+*:focus {
+  outline: none;
+}
+
+.marker {
+  box-shadow: 0px 2px 5px 0px #000000;
+}
+
+.image-gallery-thumbnails-container > a {
+  width: auto;
+}
+
+.image-gallery-thumbnails-container > a >img {
+  width: auto;
+}
+
+.leaflet-popup-content {
+  margin: 0px;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 0px;
+  border-radius: 8px;
+}
+
+.popup_link {
+  font-family: "Titillium Web",sans-serif !important;
+  display: block;
+  cursor: pointer;
+}
+
+.popup_link > .content {
+  padding: 8px;
+  padding-right: 32px;
+  font-size: 13px;
+  color: #424242;
+}
+
+.popup_link > .content > .title {
+  font-size: 20px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.popup_link > .content > .subtitle {
+  font-size: 16px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.popup_link > .content > .state {
+  font-size: 12px;
+  border-radius: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-right: 8px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.popup_link > .action {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding-left: 8px;
+  padding-right: 8px;
+  font-size: 14px;
+  background-color: #eeeeee;
+  color: #126C74;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.popup_link:hover > .action {
+  background-color: #f5f5f5;
+}
+
+.popup_link:active > .action {
+  background-color: #c2c2c2;
+}
+
+.popup_link > .action > i {
+  font-size: 21px;
+  margin-right: 4px;
+}

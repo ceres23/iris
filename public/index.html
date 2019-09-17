@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover"/>
+    <meta name="theme-color" content="#B31E36"/>
+    <meta name="Description" content="IRIS è un sistema promosso dal Comune di Venezia per consentire a tutti i cittadini di segnalare problemi di manutenzione urbana nel territorio e contribuire così alla loro soluzione"/>
+    <meta name="robots" content="noindex,nofollow"/>
+
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"/>
+
+    <!-- APPLE -->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="shortcut icon" href="%PUBLIC_URL%/icons/icon-512x512.png"/>
+    <link rel="apple-touch-icon" sizes="128x128" href="%PUBLIC_URL%/icons/icon-apple.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="%PUBLIC_URL%/icons/icon-apple.png"/>
+    <link rel="apple-touch-startup-image" href="%PUBLIC_URL%/icons/icon-512x512.png"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/fonts.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"/>
+    
+    <script>
+      function iOS() {
+        var iDevices = [
+          'iPad Simulator',
+          'iPhone Simulator',
+          'iPod Simulator',
+          'iPad',
+          'iPhone',
+          'iPod'
+        ];
+      
+        if (!!navigator.platform)
+          while (iDevices.length)
+            if(navigator.platform === iDevices.pop()) return true;
+      
+        return false;
+      }
+
+      if(iOS()){
+        document.write('<link rel="manifest" href="%PUBLIC_URL%/manifest_ios.json"/>');
+      }
+      else{
+        document.write('<link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>');
+      }
+    </script>
+    <style>
+    html, body, #root{
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      overflow: hidden;
+    }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      Devi abilitare JavaScript per vedere questo sito
+    </noscript>
+
+    <div id="root"></div>
+
+    <!-- Snackbar -->
+    <div id="snackbar_container"></div>
+  </body>
+</html>
