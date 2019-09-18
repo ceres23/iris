@@ -1,7 +1,4 @@
-# Annunci / Status del progetto
-
-# Titolo
-IRIS 2
+# IRIS 2
 
 > Sistema per consentire ai cittadini di segnalare problemi di manutenzione  urbana nel territorio e contribuire così alla loro soluzione
 
