@@ -59,7 +59,7 @@ description:
       - Aggiungere commenti
       - Riportare le segnalazioni inopportune
     screenshots:
-      - images/screenshot.png
+      - public/screenshot.png
 intendedAudience:
   scope:
     - government
